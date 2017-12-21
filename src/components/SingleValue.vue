@@ -1,7 +1,7 @@
 <template>
   <div class="vue-treeselect__value-wrapper">
     <div v-if="instance.hasValue && !instance.searchQuery" class="vue-treeselect__single-value">
-      {{ instance.selectedNodes[0].label }}
+      {{ instance.selectedNodes[0].id }}
     </div>
     <placeholder v-else-if="!instance.searchQuery" />
     <search-input key="input" ref="input" />
